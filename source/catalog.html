@@ -4,16 +4,17 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
   <header class="main-header">
     <a class="main-header__logo sedona-logo">
-      <img class="main-header__logo-image" src="images/logos/sedona-logo.png" width="185" height="96"
+      <img class="main-header__logo-image" src="images/logos/sedona-logo.svg" width="185" height="96"
         alt="Логотип Седоны.">
     </a>
     <nav class="main-navigation">
-      <button class="main-navigation__toggle">
+      <button class="main-navigation__toggle button-navigation-toggle">
         <span class="visually-hidden">Открыть навигацию.</span>
       </button>
       <div class="main-navigation__wrapper">
@@ -24,12 +25,10 @@
           <li class="site-list__item">
             <a href="#">Фото и видео</a>
           </li>
-        </ul>
-        <ul class="user-navigation__list user-list">
-          <li class="user-list__item">
+          <li class="site-list__item">
             <a href="#">Форма отзыва</a>
           </li>
-          <li class="user-list__item">
+          <li class="site-list__item">
             <a href="https://htmlacademy.ru">HTML academy</a>
           </li>
         </ul>
@@ -41,7 +40,7 @@
     <section class="sedona-catalog-slogan">
       <div class="sedona-catalog-slogan__wrapper">
         <h2 class="visually-hidden">Приветствие.</h2>
-        <img class="sedona-catalog-slogan__sedona-name" src="images/slogan/sedona-single-name.svg" alt="Седона.">
+        <img class="sedona-catalog-slogan__sedona-name" src="images/slogan/sedona-name.svg" alt="Седона.">
       </div>
     </section>
     <section class="sedona-media">
@@ -50,7 +49,6 @@
         <p class="sedona-media__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам
           забыть
           о политике и экономике.</p>
-
         <ul class="sedona-media__pictures user-pictures">
           <li class="user-pictures__item sedona-user-picture">
             <img class="sedona-user-picture__user-image" src="images/user-images/road.jpg" alt="Пейзаж Седоны">
@@ -62,14 +60,14 @@
               <span class="sedona-user-picture__autor-name">Борис</span>
             </p>
             <div class="sedona-user-picture__likes">
-              <button class="sedona-user-picture__like-button" type="button">
-                <img src="images/icons/like-icon.svg">
+              <button class="sedona-user-picture__like-icon like-button" type="button">
+                <img src="images/icons/like-icon.svg" alt="Поставить лайк">
               </button>
               <span class="sedona-user-picture__likes-number">1350</span>
             </div>
           </li>
           <li class="user-pictures__item sedona-user-picture">
-            <img class="sedona-user-picture__user-image" src="images/user-images/plant.png" alt="Растение в Седоне.">
+            <img class="sedona-user-picture__user-image" src="images/user-images/plant.jpg" alt="Растение в Седоне.">
             <h3 class="sedona-user-picture__image-header">
               Местная растительность
             </h3>
@@ -78,8 +76,8 @@
               <span class="sedona-user-picture__autor-name">Сергей</span>
             </p>
             <div class="sedona-user-picture__likes">
-              <button class="sedona-user-picture__like-button" type="button">
-                <img src="images/icons/like-icon.svg">
+              <button class="sedona-user-picture__like-icon like-button" type="button">
+                <img src="images/icons/like-icon.svg" alt="Поставить лайк">
               </button>
               <span class="sedona-user-picture__likes-number">143</span>
             </div>
@@ -94,8 +92,8 @@
               <span class="sedona-user-picture__autor-name">Петр</span>
             </p>
             <div class="sedona-user-picture__likes">
-              <button class="sedona-user-picture__like-button" type="button">
-                <img src="images/icons/like-icon.svg">
+              <button class="sedona-user-picture__like-icon like-button" type="button">
+                <img src="images/icons/like-icon.svg" alt="Поставить лайк">
               </button>
               <span class="sedona-user-picture__likes-number">96</span>
             </div>
@@ -110,26 +108,25 @@
               <span class="sedona-user-picture__autor-name">Антон</span>
             </p>
             <div class="sedona-user-picture__likes">
-              <button class="sedona-user-picture__like-button" type="button">
-                <img src="images/icons/like-icon.svg">
+              <button class="sedona-user-picture__like-icon like-button" type="button">
+                <img src="images/icons/like-icon.svg" alt="Поставить лайк">
               </button>
               <span class="sedona-user-picture__likes-number">154</span>
             </div>
           </li>
         </ul>
-
         <div class="sedona-media__video sedona-video">
-          <h3 class="sedona-video__hesder">Все еще сомневаетесь?</h3>
-
-          <a class="sedona-video" href="#">
-            <img class="sedona-video__preview" src="images/previews/video-preview.jpg">
+          <h3 class="sedona-video__header">Все еще сомневаетесь?</h3>
+          <p class="sedona-video__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали
+            в
+            очередной раз!</p>
+          <a class="sedona-video__link" href="#">
+            <img class="sedona-video__preview" src="images/previews/video-preview.jpg" alt="Превью видео о Седоне.">
           </a>
         </div>
       </div>
     </section>
   </main>
-
-
   <footer class="main-footer">
     <div class="footer-wrapper">
       <div class="main-footer__visit">
