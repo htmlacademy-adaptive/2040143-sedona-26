@@ -1,0 +1,224 @@
+/*
+@import "blocks/button-navigation-toggle";
+@import "blocks/button-primary";
+
+@import "blocks/catalog-main-like-button";
+@import "blocks/catalog-main-sedona-map";
+@import "blocks/catalog-main-sedona-media";
+@import "blocks/catalog-main-sedona-video";
+
+@import "blocks/footer-developer";
+@import "blocks/footer-social";
+@import "blocks/footer-wrapper";
+
+@import "blocks/header-main-header";
+@import "blocks/header-main-navigation";
+@import "blocks/header-sedona-logo";
+
+@import "blocks/index-main-main-container";
+
+
+@import "blocks/form-main-feedback-form";
+@import "blocks/form-main-form-list-item";
+@import "blocks/form-main-main-form-container";
+@import "blocks/form-main-sedona-catalog-slogan";
+@import "blocks/form-main-user-call";
+@import "blocks/form-main-user-email";
+@import "blocks/form-main-user-form";
+
+
+
+
+
+
+*/
+.navigation-item {
+  background-color: #81B3D2;
+  text-decoration: none;
+}
+.site-list {
+  list-style-type: none;
+  padding: 0;
+}
+.slogan {
+  background-image: url(../../images/background/sedona-view-main.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  display: block;
+  min-height: 389px;
+  padding: 90px 19px 85px 19px;
+  box-sizing: border-box;
+}
+.sedona-advantages {
+  color: #000000;
+  padding: 0;
+  list-style-type: none;
+}
+.social-list {
+  list-style-type: none;
+  display: flex;
+}
+.container {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  background-color: #ffffff;
+}
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsansbold.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsansbold.woff") format("woff");
+  font-display: swap;
+}
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 0 auto;
+  min-height: 100%;
+}
+.advantages {
+  padding: 0;
+  text-align: center;
+}
+.offer {
+  padding: 39px 18px 49px;
+  text-align: center;
+}
+.advantage-detailes {
+  list-style-type: none;
+  padding: 0;
+  font-weight: 400;
+}
+.product-advantage {
+  color: #000000;
+  padding: 0;
+}
+.main-header {
+  padding: 0;
+}
+.product-advantage-text {
+  padding: 18px;
+  text-align: center;
+}
+.product-advantage-text product-advantage-text__description {
+  font-weight: 400;
+}
+.advantage-detailed {
+  font-weight: 700;
+}
+.sedona-catalog-slogan {
+  background-image: url(../../images/background/sedona-view-main.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  display: block;
+  min-height: 214px;
+  padding: 90px 19px 85px 19px;
+  box-sizing: border-box;
+}
+.user-pictures {
+  list-style-type: none;
+  padding: 0;
+}
+.main-footer {
+  text-align: center;
+}
+.main-catalog-container {
+  padding: 0 20px;
+}
+.sedona-user-picture__autor {
+  text-transform: none;
+}
+.feedback-form__wrapper,
+.feedback-form__header {
+  text-align: center;
+  padding: 0 20px;
+}
+.user-name-form__header {
+  font-weight: 700;
+}
+.contacts-form__header {
+  font-weight: 700;
+}
+.user-feedback-forms__header {
+  font-weight: 700;
+}
+.visited-attractions__header {
+  font-weight: 700;
+}
+.user-comment-form__header {
+  font-weight: 700;
+}
+.user-visited-attractions {
+  list-style-type: none;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+.visited-attractions-form {
+  padding: 0;
+  margin: 0;
+  text-transform: none;
+  font-weight: 700;
+}
+.feedback-form-item {
+  text-transform: none;
+  font-weight: 700;
+  padding: 0;
+}
+.user-feedback {
+  list-style-type: none;
+  text-align: left;
+  padding: 0;
+}
+.user-contacts {
+  list-style-type: none;
+  padding: 0;
+  text-align: left;
+}
+.user-name-list {
+  list-style-type: none;
+  text-align: left;
+  padding: 0;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/*# sourceMappingURL=style.css.map */
