@@ -1,0 +1,17 @@
+.user-pictures {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 324px);
+    column-gap: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    column-gap: 0;
+  }
+}
