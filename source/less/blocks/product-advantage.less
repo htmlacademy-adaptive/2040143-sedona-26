@@ -1,6 +1,46 @@
 .product-advantage {
   color: #000000;
   padding: 0;
+  height: auto;
 
 
+  @media (min-width: @tablet-width) {
+    display: flex;
+    min-height: 256px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    min-height: 256px;
+  }
+}
+
+.product-advantage__text {
+  padding: 50px 0;
+  box-sizing: border-box;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    width: 256px;
+    text-align: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 400px;
+    text-align: center;
+    min-height: 256px;
+  }
+}
+
+.product-advantage__image {
+  @media (min-width: @tablet-width) {
+    width: 512px;
+    object-fit: cover;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 800px;
+    min-height: 256px;
+    object-fit: cover;
+  }
 }
