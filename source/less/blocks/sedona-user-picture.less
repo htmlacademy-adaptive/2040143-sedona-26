@@ -7,14 +7,14 @@
   object-fit: cover;
 }
 
-@media (min-width: @tablet-width) {
-  .sedona-user-picture:first-child {
+.sedona-user-picture:first-child {
+  @media (min-width: @tablet-width) {
     grid-column: 1/3;
   }
 }
 
-@media (min-width: @desktop-width) {
-  .sedona-user-picture:first-child {
+.sedona-user-picture:first-child {
+  @media (min-width: @desktop-width) {
     grid-column: 1/4;
   }
 }
