@@ -1,0 +1,467 @@
+/*
+@import "blocks/button-navigation-toggle";
+@import "blocks/button-primary";
+
+@import "blocks/like-button";
+@import "blocks/sedona-map";
+
+@import "blocks/sedona-video";
+
+@import "blocks/developer";
+@import "blocks/social";
+
+
+@import "blocks/main-header";
+@import "blocks/main-navigation";
+
+
+@import "blocks/main-container";
+
+
+@import "blocks/feedback-form";
+@import "blocks/form-list-item";
+
+@import "blocks/sedona-catalog-slogan";
+@import "blocks/user-call";
+@import "blocks/user-email";
+
+
+
+
+
+
+
+*/
+.navigation-item {
+  background-color: #81B3D2;
+}
+.navigation-item__link {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 700;
+}
+.site-list {
+  list-style-type: none;
+  padding: 0;
+}
+@media (min-width: 768px) {
+  .site-list {
+    display: flex;
+    flex-direction: row;
+    width: 768px;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 1200px) {
+  .site-list {
+    display: flex;
+    flex-direction: row;
+    width: 1200px;
+  }
+}
+.slogan {
+  background-image: url(../images/background/sedona-view-main.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  display: block;
+  min-height: 389px;
+  padding: 90px 19px 85px 19px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.sedona-advantages {
+  color: #000000;
+  padding: 0;
+  list-style-type: none;
+}
+@media (min-width: 768px) {
+  .sedona-advantages {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 1200px) {
+  .sedona-advantages {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+}
+.container {
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  background-color: #ffffff;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 768px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+.advantages {
+  padding: 0;
+  text-align: center;
+}
+.offer {
+  padding: 39px 18px 49px;
+  text-align: center;
+}
+.advantage-detailes {
+  list-style-type: none;
+  padding: 0;
+  font-weight: 400;
+}
+@media (min-width: 768px) {
+  .advantage-detailes {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.product-advantage {
+  color: #000000;
+  padding: 0;
+  height: auto;
+}
+@media (min-width: 768px) {
+  .product-advantage {
+    display: flex;
+    min-height: 256px;
+  }
+}
+@media (min-width: 1200px) {
+  .product-advantage {
+    display: flex;
+    min-height: 256px;
+  }
+}
+.product-advantage__text {
+  padding: 50px 0;
+  box-sizing: border-box;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .product-advantage__text {
+    width: 256px;
+    text-align: center;
+  }
+}
+@media (min-width: 1200px) {
+  .product-advantage__text {
+    width: 400px;
+    text-align: center;
+    min-height: 256px;
+  }
+}
+@media (min-width: 768px) {
+  .product-advantage__image {
+    width: 512px;
+    object-fit: cover;
+  }
+}
+@media (min-width: 1200px) {
+  .product-advantage__image {
+    width: 800px;
+    min-height: 256px;
+    object-fit: cover;
+  }
+}
+.main-header {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+}
+@media (min-width: 768px) {
+  .product-advantage-text__description {
+    font-weight: 400;
+  }
+}
+@media (min-width: 768px) {
+  .product-advantage-text__number {
+    font-weight: 400;
+  }
+}
+.advantage-detailed {
+  font-weight: 700;
+}
+@media (min-width: 768px) {
+  .advantage-detailed {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.sedona-catalog-slogan {
+  background-image: url(../images/background/sedona-view-main.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  display: block;
+  min-height: 214px;
+  padding: 90px 19px 85px 19px;
+  box-sizing: border-box;
+}
+.user-pictures {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+@media (min-width: 768px) {
+  .user-pictures {
+    display: grid;
+    grid-template-columns: repeat(2, 324px);
+    column-gap: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .user-pictures {
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    column-gap: 0;
+  }
+}
+.main-footer {
+  text-align: center;
+}
+.main-catalog-container {
+  padding: 0 20px;
+}
+.sedona-user-picture__autor {
+  text-transform: none;
+}
+.sedona-user-picture__user-image {
+  width: 100%;
+  object-fit: cover;
+}
+@media (min-width: 768px) {
+  .sedona-user-picture:first-child {
+    grid-column: 1/3;
+  }
+}
+@media (min-width: 1200px) {
+  .sedona-user-picture:first-child {
+    grid-column: 1/4;
+  }
+}
+.feedback-form__wrapper,
+.feedback-form__header {
+  text-align: center;
+  padding: 0 20px;
+}
+.user-name-form__header {
+  font-weight: 700;
+}
+.contacts-form__header {
+  font-weight: 700;
+}
+.user-feedback-forms__header {
+  font-weight: 700;
+}
+@media (min-width: 768px) {
+  .user-feedback-forms {
+    grid-column: 1/3;
+  }
+}
+.visited-attractions__header {
+  font-weight: 700;
+}
+@media (min-width: 768px) {
+  .visited-attractions {
+    grid-column: 1/3;
+  }
+}
+.user-comment-form__header {
+  font-weight: 700;
+}
+@media (min-width: 768px) {
+  .user-comment-form {
+    grid-column: 1/3;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.user-visited-attractions {
+  list-style-type: none;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+@media (min-width: 768px) {
+  .user-visited-attractions {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.visited-attractions-form {
+  padding: 0;
+  margin: 0;
+  text-transform: none;
+  font-weight: 700;
+}
+.feedback-form-item {
+  text-transform: none;
+  font-weight: 700;
+  padding: 0;
+}
+.user-feedback {
+  list-style-type: none;
+  text-align: left;
+  padding: 0;
+}
+@media (min-width: 768px) {
+  .user-feedback {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.user-contacts {
+  list-style-type: none;
+  padding: 0;
+  text-align: left;
+}
+.user-name-list {
+  list-style-type: none;
+  text-align: left;
+  padding: 0;
+}
+.social-list {
+  list-style-type: none;
+  display: flex;
+}
+@media (min-width: 768px) {
+  .social-list {
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media (min-width: 1200px) {
+  .social-list {
+    display: flex;
+    flex-direction: row;
+  }
+}
+.sedona-logo {
+  margin: 0;
+  padding: 0;
+  width: 185px;
+  height: 96px;
+}
+@media (min-width: 768px) {
+  .sedona-logo {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    right: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .sedona-logo {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    right: 0;
+  }
+}
+.main-form-container {
+  padding: 0 20px;
+}
+@media (min-width: 768px) {
+  .footer-wrapper {
+    display: flex;
+    padding: 0 45px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media (min-width: 1200px) {
+  .footer-wrapper {
+    display: flex;
+    padding: 0 100px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media (min-width: 768px) {
+  .user-form {
+    display: grid;
+    grid-template-columns: repeat(2, 290px);
+    column-gap: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  .user-form {
+    display: grid;
+    grid-template-columns: repeat(2, 430px);
+    column-gap: 60px;
+  }
+}
+.sedona-media__header {
+  text-align: center;
+}
+.sedona-media__description {
+  text-align: center;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 0 auto;
+  min-height: 100%;
+}
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsansbold.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsansbold.woff") format("woff");
+  font-display: swap;
+}
+/*# sourceMappingURL=style.css.map */
