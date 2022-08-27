@@ -1,5 +1,40 @@
 .feedback-form__wrapper,
 .feedback-form__header {
   text-align: center;
-  padding: 0 20px;
+  padding: 24px 20px;
+  width: auto;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    padding: 64px 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 64px 120px;
+  }
+}
+
+.feedback-form {
+  text-align: center;
+
+}
+
+.feedback-form__description {
+  padding: 33px 20px;
+  margin: 0;
+
+  @media (max-width: @mobile-width) {
+    border-bottom: solid 1px #F2F2F2;
+  }
+}
+
+.feedback-form__header {
+  margin: 0;
+  padding: 36px 20px 0 20px;
+}
+
+.feedback-form__user-feedback {
+  padding: 0;
+  margin: 0;
 }
