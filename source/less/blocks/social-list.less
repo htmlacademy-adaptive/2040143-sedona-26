@@ -1,6 +1,7 @@
 .social-list {
   list-style-type: none;
   display: flex;
+  padding: 0;
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -11,4 +12,13 @@
     display: flex;
     flex-direction: row;
   }
+}
+
+.social-list__item:not(:last-child) {
+  margin-right: 6px;
+}
+
+.social-list__item {
+  width: 48px;
+  height: 48px;
 }

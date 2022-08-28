@@ -1,8 +1,17 @@
 .user-feedback-forms__header {
   font-weight: 700;
+  padding: 24px 0 0 0;
 }
 
 .user-feedback-forms {
+  border: none;
+  padding: 0 0 24px 0;
+  margin: 0;
+
+  @media (max-width: @mobile-width) {
+    border-bottom: solid 1px #F2F2F2;
+  }
+
   @media (min-width: @tablet-width) {
     grid-column: 1/3;
   }

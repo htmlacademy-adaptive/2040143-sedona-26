@@ -1,11 +1,40 @@
 .product-advantage-text__description {
-  @media (min-width: @tablet-width) {
-    font-weight: 400;
-  }
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
 }
 
 .product-advantage-text__number {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.product-advantage-text__header {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.product-advantage-text--illustrated {
+  background-color: #81B3D2;
+  color: #ffffff;
+}
+
+.product-advantage-text {
+  height: auto;
+  min-height: 256px;
+}
+
+.advantage-detailes__item .product-advantage-text {
+  background-color: #ffffff;
+  display: block;
+  min-height: 113px;
+
   @media (min-width: @tablet-width) {
-    font-weight: 400;
+    min-height: 330px;
+    padding-top: 150px;
+    box-sizing: border-box;
+    height: auto;
   }
 }

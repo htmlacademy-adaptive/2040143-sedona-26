@@ -3,15 +3,21 @@
   padding: 0;
   margin: 0;
 
+
   @media (min-width: @tablet-width) {
     display: grid;
-    grid-template-columns: repeat(2, 324px);
+    grid-template-columns: repeat(2, 1fr);
     column-gap: 0;
+
   }
 
   @media (min-width: @desktop-width) {
     display: grid;
-    grid-template-columns: repeat(3, 400px);
+    grid-template-columns: repeat(3, 1fr);
     column-gap: 0;
   }
+}
+
+.user-pictures__item {
+  margin-bottom: 55px;
 }

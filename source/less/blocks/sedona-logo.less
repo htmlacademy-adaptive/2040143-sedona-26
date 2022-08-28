@@ -3,27 +3,15 @@
   padding: 0;
   width: 185px;
   height: 96px;
-}
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  right: 0;
+  z-index: 2;
 
-
-.sedona-logo {
   @media (min-width: @tablet-width) {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    right: 0;
-  }
-}
-
-.sedona-logo {
-  @media (min-width: @desktop-width) {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    right: 0;
+    z-index: 5;
   }
 }

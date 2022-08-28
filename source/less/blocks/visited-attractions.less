@@ -1,9 +1,18 @@
 .visited-attractions__header {
   font-weight: 700;
+  padding: 24px 0 20px 0;
 }
 
 
 .visited-attractions {
+  border: none;
+  padding-bottom: 24px;
+
+  @media (max-width: @mobile-width) {
+    border-bottom: solid 1px #F2F2F2;
+  }
+
+
   @media (min-width: @tablet-width) {
     grid-column: 1/3;
   }

@@ -1,12 +1,14 @@
 .site-list {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: row;
     width: 768px;
     justify-content: space-between;
+    flex-grow: 1;
   }
 
   @media (min-width: @desktop-width) {
@@ -14,4 +16,18 @@
     flex-direction: row;
     width: 1200px;
   }
+
+  @media (max-width: @mobile-width) {
+    display: block;
+  }
+}
+
+.main-navigation--closed .site-list__item {
+  @media (max-width: @mobile-width) {
+    display: none;
+  }
+}
+
+.main-navigation--nojs .site-list__item {
+  display: block;
 }
