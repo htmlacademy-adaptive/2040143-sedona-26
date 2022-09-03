@@ -6,7 +6,7 @@
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="js/script.js"></script>
+  <link rel="icon" href="favicon.ico">
 </head>
 
 <body class="page__body">
@@ -59,8 +59,14 @@
                 <p class="product-advantage-text__description">Седона не аттракцион для туристов, там течет своя жизнь
                 </p>
               </div>
-              <img class="product-advantage__image" src="images/sedona-advantages/sedona-advantage-town.jpg"
-                alt="Городок Седона.">
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="images/sedona-advantages/sedona-advantage-town-desktop.jpg 1x, images/sedona-advantages/sedona-advantage-town-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="images/sedona-advantages/sedona-advantage-town-tablet.jpg 1x, images/sedona-advantages/sedona-advantage-town-tablet@2x.jpg 2x">
+                <img class="product-advantage__image" src="images/sedona-advantages/sedona-advantage-town.jpg"
+                  alt="Городок Седона.">
+              </picture>
               <ul class=" advantage-detailed__list advantage-detailes">
                 <li class="advantage-detailes__item advantage-detailes__item--housing product-advantage">
                   <div class="product-advantage__text product-advantage-text">
@@ -86,15 +92,20 @@
               </ul>
             </li>
             <li class="sedona-advantages__item product-advantage">
-              <img class="product-advantage__image" src="images/sedona-advantages/sedona-advantage-mountains.jpg"
-                alt="Мост Дьявола.">
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="images/sedona-advantages/sedona-advantage-mountains-desktop.jpg 1x, images/sedona-advantages/sedona-advantage-mountains-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="images/sedona-advantages/sedona-advantage-mountains-tablet.jpg 1x, images/sedona-advantages/sedona-advantage-mountains-tablet@2x.jpg 2x">
+                <img class="product-advantage__image" src="images/sedona-advantages/sedona-advantage-mountains.jpg"
+                  alt="Мост Дьявола.">
+              </picture>
               <div class="product-advantage__text product-advantage-text product-advantage-text--illustrated">
                 <h3 class="product-advantage-text__header">Там есть Мост дьявола</h3>
                 <p class="product-advantage-text__number">— №2 —</p>
                 <p class="product-advantage-text__description">Да, по нему можно пройти! Если вы осмелитесь, конечно
                 </p>
               </div>
-
             </li>
             <li class=" sedona-advantages__item product-advantage">
               <div class="product-advantage__text product-advantage-text">
@@ -198,6 +209,7 @@
       </div>
     </footer>
   </div>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

@@ -6,7 +6,7 @@
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="js/script.js"></script>
+  <link rel="icon" href="favicon.ico">
 </head>
 
 <body class="page__body">
@@ -54,7 +54,14 @@
             о политике и экономике.</p>
           <ul class="sedona-media__pictures user-pictures">
             <li class="user-pictures__item sedona-user-picture">
-              <img class="sedona-user-picture__user-image" src="images/user-images/road.jpg" alt="Пейзаж Седоны">
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="images/user-images/road-desktop.jpg 1x, images/user-images/road-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="images/user-images/road-tablet.jpg 1x, images/user-images/road-tablet@2x.jpg 2x">
+                <img class="sedona-user-picture__user-image" src="images/user-images/road.jpg"
+                  srcset="images/user-images/road@2x.jpg 2x" alt="Пейзаж Седоны">
+              </picture>
               <h3 class="sedona-user-picture__image-header">
                 Неродные просторы
               </h3>
@@ -76,8 +83,14 @@
               </div>
             </li>
             <li class="user-pictures__item sedona-user-picture">
-              <img class="sedona-user-picture__user-image" src="images/user-images/plant.jpg" alt="Растение в Седоне.">
-
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="images/user-images/plant-desktop.jpg 1x, images/user-images/plant-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="images/user-images/plant-tablet.jpg 1x, images/user-images/plant-tablet.jpg@2x.jpg 2x">
+                <img class="sedona-user-picture__user-image" src="images/user-images/plant.jpg"
+                  alt="Растение в Седоне.">
+              </picture>
               <h3 class="sedona-user-picture__image-header">
                 Местная растительность
               </h3>
@@ -97,11 +110,16 @@
                 </button>
                 <span class="sedona-user-picture__likes-number">143</span>
               </div>
-
             </li>
             <li class="user-pictures__item sedona-user-picture">
-              <img class="sedona-user-picture__user-image" src="images/user-images/north-road.jpg"
-                alt="Дорога на север.">
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="images/user-images/north-road-desktop.jpg 1x, images/user-images/north-road-desktop@2x.jpg 2x ">
+                <source media="(min-width: 768px)"
+                  srcset="images/user-images/north-road-tablet.jpg 1x, images/user-images/north-road-tablet@2x.jpg 2x">
+                <img class="sedona-user-picture__user-image" src="images/user-images/north-road.jpg"
+                  alt="Дорога на север.">
+              </picture>
               <h3 class="sedona-user-picture__image-header">
                 Дорога на север
               </h3>
@@ -123,8 +141,14 @@
               </div>
             </li>
             <li class="user-pictures__item sedona-user-picture">
-              <img class="sedona-user-picture__user-image" src="images/user-images/devil-bridge.jpg"
-                alt="Мост дьявола.">
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="images/user-images/devil-bridge-desktop.jpg 1x, images/user-images/devil-bridge-desktop@2.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="images/user-images/devil-bridge-tablet.jpg 1x, images/user-images/devil-bridge-tablet@2.jpg">
+                <img class="sedona-user-picture__user-image" src="images/user-images/devil-bridge.jpg"
+                  alt="Мост дьявола.">
+              </picture>
               <h3 class="sedona-user-picture__image-header">
                 Мост дьявола
               </h3>
@@ -152,7 +176,13 @@
               в
               очередной раз!</p>
             <a class="sedona-video__link" href="#">
-              <img class="sedona-video__preview" src="images/previews/video-preview.jpg" alt="Превью видео о Седоне.">
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="images/previews/video-preview-desktop.jpg 1x, images/previews/video-preview-desktop@2.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="images/previews/video-preview-tablet.jpg 1x, images/previews/video-preview-tablet@2.jpg 2x">
+                <img class="sedona-video__preview" src="images/previews/video-preview.jpg" alt="Превью видео о Седоне.">
+              </picture>
             </a>
           </div>
         </div>
@@ -219,6 +249,7 @@
       </div>
     </footer>
   </div>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

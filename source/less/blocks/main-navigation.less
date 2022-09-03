@@ -26,3 +26,51 @@
     left: 0;
   }
 }
+
+.main-navigation--closed .button-navigation-toggle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 23px;
+  height: 4px;
+  background-color: #81B3D2;
+  box-shadow: 0 9px 0 0 #81B3D2, 0 18px 0 0 #81B3D2;
+}
+
+.main-navigation--opened .button-navigation-toggle {
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 9px;
+    background-color: #ffffff;
+    width: 23px;
+    height: 4px;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+}
+
+.main-navigation--nojs .button-navigation-toggle {
+  display: none;
+}
+
+.main-navigation--closed .site-list__item {
+  @media (max-width: @mobile-width) {
+    display: none;
+  }
+}
+
+.main-navigation--nojs .site-list__item {
+  display: block;
+}
