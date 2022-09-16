@@ -16,11 +16,13 @@
     "gulp-rename": "^2.0.0",
     "gulp-squoosh": "^0.9.0",
     "gulp-svgstore": "^9.0.0",
+    "gulp-terser": "^2.1.0",
     "postcss": "8.3.11",
     "postcss-csso": "^6.0.1",
     "stylelint": "13.13.1",
     "stylelint-config-htmlacademy": "0.1.11",
-    "svgo": "^2.8.0"
+    "svgo": "^2.8.0",
+    "tester": "^1.4.5"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
@@ -41,7 +43,7 @@
     "*.js",
     "source/*.html",
     "source/js/**/*.js",
-    "source/img/**/*.svg",
+    "source/images/**/*.svg",
     "source/less/**/*.less"
   ],
   "engines": {
@@ -49,6 +51,7 @@
   },
   "type": "module",
   "dependencies": {
+    "gulp-svgmin": "^4.1.0",
     "svgstore": "^3.0.1"
   }
 }

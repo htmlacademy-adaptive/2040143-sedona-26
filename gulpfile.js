@@ -7,10 +7,11 @@ import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
 import rename from 'gulp-rename';
 import htmlmin from 'gulp-htmlmin';
-import scoosh from 'gulp-libsquoosh';
-import svgo from 'svgo';
-import svgstore from 'svgstore';
+import sqoosh from 'gulp-libsquoosh';
+import svgstore from 'gulp-svgstore';
 import del from 'del';
+import svgo from 'gulp-svgmin';
+import terser from 'gulp-terser';
 
 
 // Styles
@@ -67,9 +68,9 @@ const script = () => {
 }
 
 //images
-const images = () => {
+const optimizeImages = () => {
   return gulp.src('source/images/**/*.{jpg,png}')
-    .pipe(squoosh())
+    .pipe(sqoosh())
     .pipe(gulp.dest('build/images'))
 }
 
@@ -78,7 +79,7 @@ const images = () => {
 
 const createWebP = () => {
   return gulp.src('source/images/**/*.{jpg,png}')
-    .pipe(scoosh({
+    .pipe(sqoosh({
       webp: {}
     }))
     .pipe(gulp.dest('build/images'))
@@ -94,18 +95,18 @@ const svg = () => {
 }
 
 const sprite = () => {
-  return (['source/images/slogan/*.svg', 'source/images/icons/**/*.svg', '!source/images/icons/advantage-icons*.svg'])
+  return gulp.src(['source/images/slogan/*.svg', 'source/images/icons/**/*.svg', '!source/images/icons/advantage-icons*.svg'])
     .pipe(svgo())
     .pipe(svgstore({
       inlineSvg: true
     }))
-    .pipe(rename(sprite.svg))
+    .pipe(rename('sprite.svg'))
     .pipe(gulp.dest('build/images'))
 }
 
 //copy
 
-const copy = () => {
+const copy = (done) => {
   gulp.src([
     'source/fonts/*.{woff,woff2}',
     'source/*.ico',
@@ -113,6 +114,12 @@ const copy = () => {
     base: 'sourse'
   })
     .pipe(gulp.dest('build'))
+  done()
+}
+
+function copyImages() {
+  return gulp.src('sourse/images/**/*.{jpg,png}')
+    .pipe(gulp.dest('build/images'));
 }
 
 //clean
@@ -130,7 +137,21 @@ const watcher = () => {
 
 
 export default gulp.series(
-  html, styles, server, watcher
+  clean,
+  copy,
+  copyImages,
+  gulp.parallel(
+    html,
+    styles,
+    svg,
+    sprite,
+    script,
+    createWebP
+  ),
+  gulp.series(
+    server,
+    watcher
+  )
 );
 
 //build
@@ -138,7 +159,7 @@ export default gulp.series(
 export const build = gulp.series(
   clean,
   copy,
-  images,
+  optimizeImages,
   gulp.parallel(
     styles,
     html,
