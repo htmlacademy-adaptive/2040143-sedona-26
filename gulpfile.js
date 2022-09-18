@@ -88,14 +88,8 @@ const createWebP = () => {
 
 //svg
 
-const svg = () => {
-  return gulp.src(['source/images/logos/*.svg', 'source/images/icons/advantage-icons*.svg'])
-    .pipe(svgo())
-    .pipe(gulp.dest('build/images'))
-}
-
 const sprite = () => {
-  return gulp.src(['source/images/slogan/*.svg', 'source/images/icons/**/*.svg', '!source/images/icons/advantage-icons*.svg'])
+  return gulp.src(['source/images/slogan/*.svg', 'source/images/icons/**/*.svg', '!source/images/icons/advantage-icons/*.svg'])
     .pipe(svgo())
     .pipe(svgstore({
       inlineSvg: true
@@ -110,15 +104,17 @@ const copy = (done) => {
   gulp.src([
     'source/fonts/*.{woff,woff2}',
     'source/*.ico',
+    'source/images/logos/*.svg',
+    'source/images/icons/advantage-icons/*.svg'
   ], {
-    base: 'sourse'
+    base: 'source'
   })
     .pipe(gulp.dest('build'))
   done()
 }
 
 function copyImages() {
-  return gulp.src('sourse/images/**/*.{jpg,png}')
+  return gulp.src('source/images/**/*.{jpg,png}')
     .pipe(gulp.dest('build/images'));
 }
 
@@ -132,8 +128,9 @@ const clean = () => {
 
 const watcher = () => {
   gulp.watch('source/less/**/*.less', gulp.series(styles));
-  gulp.watch('source/*.html').on('change', browser.reload);
-}
+  gulp.watch('source/js/*.js', gulp.series(script));
+  gulp.watch('source/*.html', gulp.series(html, reload));
+};
 
 
 export default gulp.series(
@@ -143,7 +140,6 @@ export default gulp.series(
   gulp.parallel(
     html,
     styles,
-    svg,
     sprite,
     script,
     createWebP
@@ -163,7 +159,6 @@ export const build = gulp.series(
   gulp.parallel(
     styles,
     html,
-    svg,
     sprite,
     script,
     createWebP
