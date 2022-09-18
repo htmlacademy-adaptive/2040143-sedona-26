@@ -6,20 +6,31 @@
     "@htmlacademy/editorconfig-cli": "1.0.0",
     "autoprefixer": "10.4.0",
     "browser-sync": "2.27.7",
-    "gulp": "4.0.2",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-htmlmin": "^5.0.1",
     "gulp-less": "5.0.0",
+    "gulp-libsquoosh": "^1.1.2",
     "gulp-plumber": "1.2.1",
     "gulp-postcss": "9.0.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-squoosh": "^0.9.0",
+    "gulp-svgstore": "^9.0.0",
+    "gulp-terser": "^2.1.0",
     "postcss": "8.3.11",
+    "postcss-csso": "^6.0.1",
     "stylelint": "13.13.1",
-    "stylelint-config-htmlacademy": "0.1.11"
+    "stylelint-config-htmlacademy": "0.1.11",
+    "svgo": "^2.8.0",
+    "tester": "^1.4.5"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/less/**/*.less\" --syntax less",
     "lint": "npm run editorconfig && npm run stylelint",
-    "build": "gulp styles",
-    "start": "gulp"
+    "styles": "gulp styles",
+    "start": "gulp",
+    "build": "gulp build"
   },
   "browserslist": [
     "last 2 versions",
@@ -33,11 +44,15 @@
     "*.js",
     "source/*.html",
     "source/js/**/*.js",
-    "source/img/**/*.svg",
+    "source/images/**/*.svg",
     "source/less/**/*.less"
   ],
   "engines": {
     "node": "^16"
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "gulp-svgmin": "^4.1.0",
+    "svgstore": "^3.0.1"
+  }
 }

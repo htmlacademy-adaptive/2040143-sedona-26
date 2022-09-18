@@ -3,6 +3,7 @@
   display: flex;
   padding: 0;
 
+
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: row;
@@ -21,4 +22,16 @@
 .social-list__item {
   width: 48px;
   height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #81B3D2;
+
+  &:hover {
+    background-color: #669EC0;
+  }
+
+  &:active {
+    background-color: #669EC0
+  }
 }

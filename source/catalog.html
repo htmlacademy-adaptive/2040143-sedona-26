@@ -4,7 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="../source/fonts/ptsans.woff2" as="font">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="favicon.ico">
 </head>
@@ -16,9 +17,8 @@
   <div class="container">
     <header class="main-header">
       <a class="main-header__logo sedona-logo">
-        <svg class="sedona-logo__logo-image" aria-hidden="true" focusable="false" width="185" height="96" fill="none">
-          <use href="images/sprite.svg#sedona-logo-picture"></use>
-        </svg>
+        <img class="sedona-logo__logo-image" src="images/logos/sedona-logo.svg" width="185" height="96"
+          alt="Логотип Седоны.">
 
         <span class="visually-hidden">Логотип Седоны.</span>
       </a>
@@ -149,7 +149,7 @@
                 <source media="(min-width: 1200px)"
                   srcset="images/user-images/devil-bridge-desktop.jpg 1x, images/user-images/devil-bridge-desktop@2.jpg 2x">
                 <source media="(min-width: 768px)"
-                  srcset="images/user-images/devil-bridge-tablet.jpg 1x, images/user-images/devil-bridge-tablet@2.jpg">
+                  srcset="images/user-images/devil-bridge-tablet.jpg 1x, images/user-images/devil-bridge-tablet@2.jpg 2x">
                 <img class="sedona-user-picture__user-image" src="images/user-images/devil-bridge.jpg"
                   alt="Мост дьявола.">
               </picture>
@@ -199,27 +199,27 @@
           <ul class="social__social-list social-list">
             <li class="social-list__item">
               <a href="#" class="social-link social-link--vk">
-                <svg class="social-link__icon" width="48" height="48" fill="currentColor" aria-hidden="true"
-                  focusable="false" fill="none">
-                  <use xlink:href="#vk-icon"></use>
+                <svg class="social-link__icon" width="24" height="14" fill="currentColor" aria-hidden="true"
+                  focusable="false">
+                  <use href="images/sprite.svg#vk"></use>
                 </svg>
                 <span class="visually-hidden">ВКонтакте</span>
               </a>
             </li>
             <li class="social-list__item">
               <a href="#" class="social-link social-link--tme">
-                <svg class="social-link__icon" width="48" height="48" fill="currentColor" aria-hidden="true"
-                  focusable="false" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <use xlink:href="#tme-icon"></use>
+                <svg class="social-link__icon" width="22" height="18" fill="currentColor" aria-hidden="true"
+                  focusable="false" xmlns="http://www.w3.org/2000/svg">
+                  <use href="images/sprite.svg#tme"></use>
                 </svg>
                 <span class="visually-hidden">Telegram</span>
               </a>
             </li>
             <li class="social-list__item">
               <a href="#" class="social-link social-link--youtube">
-                <svg class="social-link__icon" width="48" height="48" fill="currentColor" aria-hidden="true"
-                  focusable="false" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <use xlink:href="#youtube-icon"></use>
+                <svg class="social-link__icon" width="20" height="14" fill="currentColor" aria-hidden="true"
+                  focusable="false" xmlns="http://www.w3.org/2000/svg">
+                  <use href="images/sprite.svg#youtube"></use>
                 </svg>
                 <span class="visually-hidden">YouTube</span>
               </a>
@@ -229,9 +229,9 @@
         <div class="main-footer__developer developer">
           <span class="developer__description">Разработано</span>
           <a class="developer__link" href="https://htmlacademy.ru/">
-            <svg aria-hidden="true" focusable="false" width="27" height="35" fill="none"
+            <svg aria-hidden="true" focusable="false" width="27" height="35" fill="currentColor"
               xmlns="http://www.w3.org/2000/svg">
-              <use xlink:href="#academy-logo"></use>
+              <use href="images/sprite.svg#htmlacademy"></use>
             </svg>
             <span class="visually-hidden">Логолип htmlacademy</span>
           </a>
