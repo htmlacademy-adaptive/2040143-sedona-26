@@ -2,6 +2,7 @@
   padding: 39px 18px 49px;
   text-align: center;
   min-height: 287px;
+  box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
     min-height: 318px;
@@ -12,27 +13,35 @@
   }
 }
 
+.offer__wrapper {
+  margin: 0;
+  padding: 0;
+}
+
 .offer__header {
-  margin-bottom: 30px;
+  padding-bottom: 25px;
+  margin: 0;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 35px;
+    padding-bottom: 35px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 40px;
+    padding-bottom: 40px;
   }
 }
 
 .offer__description {
-  margin-bottom: 32px;
+  padding-bottom: 32px;
+  margin: 0;
+
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 41px;
+    padding-bottom: 41px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 46px;
+    padding-bottom: 46px;
   }
 }
 
