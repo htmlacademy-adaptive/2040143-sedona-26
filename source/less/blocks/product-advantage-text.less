@@ -6,6 +6,10 @@
   padding-top: 17px;
   padding-bottom: 8px;
   box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 23px;
+  }
 }
 
 .product-advantage-text__number {
@@ -14,6 +18,11 @@
   line-height: 21px;
   margin: 0;
   padding-top: 10px;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 12px;
+  }
 }
 
 .product-advantage-text__header {
@@ -21,6 +30,13 @@
   line-height: 26px;
   font-weight: 700;
   margin: 0;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+    padding: 0 25px;
+    box-sizing: border-box;
+  }
 }
 
 .product-advantage-text--illustrated {
@@ -30,6 +46,10 @@
   position: relative;
   padding-bottom: 35px;
   padding-top: 38px;
+
+  @media (min-width: @desktop-width) {
+    padding-top: 53px;
+  }
 }
 
 .product-advantage-text {
@@ -38,7 +58,11 @@
 
 
 .product-advantage-text--divided {
-  padding-top: 70px;
+  @media (max-width: @mobile-width) {
+
+    padding-top: 70px;
+  }
+
 }
 
 .product-advantage-text--divided::before {

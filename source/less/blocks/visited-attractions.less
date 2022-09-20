@@ -1,12 +1,27 @@
 .visited-attractions__header {
   font-weight: 700;
-  padding: 24px 0 20px 0;
+  padding: 24px 0 0 0;
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 10px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+    padding: 21px 100px;
+    margin-bottom: 22px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 43px 300px;
+    margin-bottom: 31px;
+  }
 }
 
 
 .visited-attractions {
   border: none;
-  padding-bottom: 24px;
+  padding: 24px 0 0 0;
+  margin: 0;
 
   @media (max-width: @mobile-width) {
     border-bottom: solid 1px #F2F2F2;
@@ -15,5 +30,38 @@
 
   @media (min-width: @tablet-width) {
     grid-column: 1/3;
+  }
+}
+
+
+.visited-attractions::before {
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    right: -35px;
+    top: -50px;
+    height: 100%;
+    width: 1px;
+    background-color: #DBDBDB;
+    content: "";
+  }
+}
+
+.visited-attractions {
+  @media (min-width: @tablet-width) {
+    position: relative;
+  }
+}
+
+
+.visited-attractions__form-list {
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
   }
 }

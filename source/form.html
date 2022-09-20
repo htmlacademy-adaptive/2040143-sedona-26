@@ -48,10 +48,7 @@
       <section class="sedona-catalog-slogan">
         <div class="sedona-catalog-slogan__wrapper">
           <h2 class="visually-hidden">Приветствие.</h2>
-          <svg class="sedona-catalog-slogan__sedona-name" aria-hidden="true" focusable="false" width="229" height="39"
-            fill="none">
-            <use href="images/sprite.svg#sedona-name"></use>
-          </svg>
+          <img class="sedona-catalog-slogan__sedona-name" src="images/slogan/sedona-name.svg" alt="Седона.">
           <span class="visually-hidden">Седона.</span>
         </div>
       </section>
@@ -112,19 +109,25 @@
               </legend>
               <ul class="user-form__form-list user-feedback">
                 <li class="user-feedback__item feedback-form-item">
-                  <input class="feedback-form-item__input" type="radio" value="good" checked>
-                  <span class="feedback-form-item__feedback-checkbox-mark"></span>
-                  <span class="feedback-form-item__feedback-checkbox-label">Скорее положительное</span>
+                  <label class="feedback-form-item__checkbox">
+                    <input class="feedback-form-item__input" type="radio" value="good" name="feedback-radio" checked>
+                    <span class="feedback-form-item__feedback-checkbox-mark"></span>
+                    <span class="feedback-form-item__feedback-checkbox-label">Скорее положительное</span>
+                  </label>
                 </li>
                 <li class="user-feedback__item feedback-form-item">
-                  <input class="feedback-form-item__input" type="radio" value="bad">
-                  <span class="feedback-form-item__feedback-checkbox-mark"></span>
-                  <span class="feedback-form-item__feedback-checkbox-label">Скорее отрицательное</span>
+                  <label class="feedback-form-item__checkbox">
+                    <input class="feedback-form-item__input" type="radio" value="bad" name="feedback-radio">
+                    <span class="feedback-form-item__feedback-checkbox-mark"></span>
+                    <span class="feedback-form-item__feedback-checkbox-label">Скорее отрицательное</span>
+                  </label>
                 </li>
                 <li class="user-feedback__item feedback-form-item">
-                  <input class="feedback-form-item__input" type="radio" value="different">
-                  <span class="feedback-form-item__feedback-checkbox-mark"></span>
-                  <span class="feedback-form-item__feedback-checkbox-label">Затрудняюсь ответить</span>
+                  <label class="feedback-form-item__checkbox">
+                    <input class="feedback-form-item__input" type="radio" value="different" name="feedback-radio">
+                    <span class="feedback-form-item__feedback-checkbox-mark"></span>
+                    <span class="feedback-form-item__feedback-checkbox-label">Затрудняюсь ответить</span>
+                  </label>
                 </li>
               </ul>
             </fieldset>
@@ -134,24 +137,32 @@
               </legend>
               <ul class="visited-attractions__form-list user-visited-attractions">
                 <li class="user-visited-attractions__item visited-attractions-form">
-                  <input class="visited-attractions-form__input" type="checkbox" name="Devil Bridge" checked>
-                  <span class="visited-attractions-form__attractions-checkbox-mark"></span>
-                  <span class="visited-attractions-form__attractions-checkbox-label">Мост Дьявола</span>
+                  <label class="feedback-form-item__checkbox">
+                    <input class="visited-attractions-form__input" type="checkbox" name="Devil Bridge" checked>
+                    <span class="visited-attractions-form__attractions-checkbox-mark"></span>
+                    <span class="visited-attractions-form__attractions-checkbox-label">Мост Дьявола</span>
+                  </label>
                 </li>
                 <li class="user-visited-attractions__item visited-attractions-form">
-                  <input class="visited-attractions-form__input" type="checkbox" name="Ring-mountain" checked>
-                  <span class="visited-attractions-form__feedback-checkbox-mark"></span>
-                  <span class="visited-attractions-form__attractions-checkbox-label">Гора-Колокол</span>
+                  <label class="feedback-form-item__checkbox">
+                    <input class="visited-attractions-form__input" type="checkbox" name="Ring-mountain" checked>
+                    <span class="visited-attractions-form__attractions-checkbox-mark"></span>
+                    <span class="visited-attractions-form__attractions-checkbox-label">Гора-Колокол</span>
+                  </label>
                 </li>
                 <li class="user-visited-attractions__item visited-attractions-form">
-                  <input class="visited-attractions-form__input" type="checkbox" name="Slide-park" checked>
-                  <span class="visited-attractions-form__attractions-checkbox-mark"></span>
-                  <span class="visited-attractions-form__attractions-checkbox-label">Слайд-парк</span>
+                  <label class="feedback-form-item__checkbox">
+                    <input class="visited-attractions-form__input" type="checkbox" name="Slide-park" checked>
+                    <span class="visited-attractions-form__attractions-checkbox-mark"></span>
+                    <span class="visited-attractions-form__attractions-checkbox-label">Слайд-парк</span>
+                  </label>
                 </li>
                 <li class="user-visited-attractions__item visited-attractions-form">
-                  <input class="visited-attractions-form__input" type="checkbox" name="Red rocks">
-                  <span class="visited-attractions-form__attractions-checkbox-mark"></span>
-                  <span class="visited-attractions-form__attractions-checkbox-label">Красные скалы</span>
+                  <label class="feedback-form-item__checkbox">
+                    <input class="visited-attractions-form__input" type="checkbox" name="Red rocks">
+                    <span class="visited-attractions-form__attractions-checkbox-mark"></span>
+                    <span class="visited-attractions-form__attractions-checkbox-label">Красные скалы</span>
+                  </label>
                 </li>
               </ul>
             </fieldset>
@@ -221,6 +232,31 @@
         </div>
       </div>
     </footer>
+
+    <div class="modal-container--closed">
+      <div class="modal" id="modal-page">
+        <section class="modal__content">
+          <h2 class="modal__header">Что-то пошло не так!</h2>
+          <p class="modal__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+          <button class="modal__button button-primary">Ок</button>
+        </section>
+      </div>
+    </div>
+
+    <div class="modal-container-success--closed">
+      <div class="modal-success" id="modal-page">
+        <section class="modal-success__content">
+          <h2 class="modal-success__header">Ваш отзыв отправлен!</h2>
+          <p class="modal-success__description">Спасибо за ваше участие, ваш отзыв уже поступил к
+            нам. В ближайшее время мы опубликуем его на сайте.
+          </p>
+          <div class="modal-success__button-back">
+            <button class="modal-success__button button-primary">Закрыть окно</button>
+          </div>
+        </section>
+      </div>
+    </div>
+
   </div>
   <script src="js/script.js"></script>
 </body>

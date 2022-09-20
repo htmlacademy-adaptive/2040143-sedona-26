@@ -2,3 +2,37 @@
   text-transform: none;
   font-weight: 700;
 }
+
+.visited-attractions-form__attractions-checkbox-mark {
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  border: 0;
+  border-radius: 3px;
+  margin-right: 19px;
+  background-color: #f2f2f2;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+}
+
+.visited-attractions-form__attractions-checkbox-label {
+  margin-left: 25px;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+
+.visited-attractions-form__input[type="checkbox"]:checked+.visited-attractions-form__attractions-checkbox-mark::after {
+  position: absolute;
+  width: 22px;
+  height: 16px;
+  background-image: url("../../images/marks/checkbox-tick.svg");
+  top: 15px;
+  left: 12px;
+  content: "";
+}
+
+.visited-attractions-form__attractions-checkbox-label {
+  padding-left: 10px;
+}

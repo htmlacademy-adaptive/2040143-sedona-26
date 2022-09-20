@@ -1,5 +1,5 @@
 .advantages {
-  padding: 28px 0 0 0;
+  padding: 32px 0 0 0;
   text-align: center;
 }
 
@@ -8,15 +8,25 @@
   line-height: 26px;
   font-weight: 700;
   margin: 0;
-  padding-bottom: 35px;
+  padding: 0 25px 35px 25px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+    line-height: 26px;
+    padding-top: 15px;
+    padding-bottom: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 25px;
+  }
 }
 
 .advantages__description {
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  padding-bottom: 16px;
-  padding-top: 0;
+  padding: 0 20px 16px 20px;
   margin: 0;
 
   @media (min-width: @tablet-width) {
