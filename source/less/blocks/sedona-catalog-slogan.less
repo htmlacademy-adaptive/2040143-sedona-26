@@ -4,13 +4,64 @@
   background-repeat: no-repeat;
   background-size: auto;
   display: block;
-  min-height: 214px;
-  padding: 90px 19px 85px 19px;
+  min-height: 145px;
+  padding: 50px 19px 65px 19px;
   box-sizing: border-box;
   text-align: center;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     min-height: 289px;
+    padding-top: 95px;
   }
 
+  @media (min-width: @desktop-width) {
+    min-height: 301px;
+    padding-top: 100px;
+  }
+}
+
+.sedona-catalog-slogan__sedona-name {
+  @media (min-width: @tablet-width) {
+    width: 457px;
+    height: 78px;
+  }
+}
+
+.sedona-catalog-slogan::after {
+  @media (max-width: @mobile-width) {
+    background: url("../images/dividers/divider-mobile-slogan.svg") no-repeat;
+    width: 100%;
+    height: 57px;
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: -1px;
+    padding: 0;
+    margin: 0;
+  }
+
+  @media (min-width: @tablet-width) {
+    background: url("../images/dividers/divider-tablet-slogan.svg") no-repeat;
+    width: 768px;
+    height: 57px;
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    padding: 0;
+    margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    background: url("../images/dividers/divider-desktop-slogan.svg") no-repeat;
+    width: 100%;
+    height: 57px;
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: -1px;
+    padding: 0;
+    margin: 0;
+  }
 }

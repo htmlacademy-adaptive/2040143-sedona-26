@@ -3,3 +3,50 @@
   font-weight: 700;
   padding: 0;
 }
+
+.feedback-form-item__feedback-checkbox-mark {
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  border: 0;
+  border-radius: 50%;
+  margin-right: 19px;
+  background-color: #f2f2f2;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+}
+
+.feedback-form-item__checkbox {
+  position: relative;
+  padding: 20px 5px 5px 5px;
+}
+
+.feedback-form-item__feedback-checkbox-label {
+  margin-left: 30px;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.feedback-form-item__input {
+  cursor: pointer;
+}
+
+.feedback-form-item__input[type="radio"]:checked+.feedback-form-item__feedback-checkbox-mark::after {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #000000;
+  top: 15px;
+  left: 15px;
+  content: "";
+}
+
+.feedback-form-item__input[type="radio"]:hover~.feedback-form-item__feedback-checkbox-mark {
+  background-color: #e5e5e5;
+}
+
+.feedback-form-item__input[type="radio"]:active~.feedback-form-item__feedback-checkbox-mark {
+  background-color: #d5d5d5;
+}

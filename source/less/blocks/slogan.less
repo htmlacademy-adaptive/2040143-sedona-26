@@ -3,12 +3,13 @@
   background-color: #000000;
   background-repeat: no-repeat;
   text-align: center;
-  padding: 90px 0 85px 0;
+  padding: 90px 0 75px 0;
   box-sizing: border-box;
   background-size: cover;
   height: auto;
   min-height: 389px;
   width: 100%;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     padding-top: 77px;
@@ -19,13 +20,50 @@
       background-size: 1200px auto;
     }
   }
-
-
 }
 
 .slogan__image-header {
   @media (min-width: @tablet-width) {
     width: 461px;
     height: 350px;
+  }
+}
+
+
+.slogan::after {
+  @media (max-width: @mobile-width) {
+    background: url("../images/dividers/divider-mobile-slogan.svg") no-repeat;
+    width: 100%;
+    height: 57px;
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    padding: 0;
+    margin: 0;
+  }
+
+  @media (min-width: @tablet-width) {
+    background: url("../images/dividers/divider-tablet-slogan.svg") no-repeat;
+    width: 768px;
+    height: 57px;
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    padding: 0;
+    margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    background: url("../images/dividers/divider-desktop-slogan.svg") no-repeat;
+    width: 100%;
+    height: 57px;
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    padding: 0;
+    margin: 0;
   }
 }

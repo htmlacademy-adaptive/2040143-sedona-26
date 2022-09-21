@@ -2,26 +2,90 @@
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
+  margin: 0;
+  padding-top: 17px;
+  padding-bottom: 8px;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 23px;
+  }
 }
 
 .product-advantage-text__number {
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
+  margin: 0;
+  padding-top: 10px;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 12px;
+  }
 }
 
 .product-advantage-text__header {
-  font-size: 21px;
+  font-size: 18px;
   line-height: 26px;
   font-weight: 700;
+  margin: 0;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+    padding: 0 25px;
+    box-sizing: border-box;
+  }
 }
 
 .product-advantage-text--illustrated {
   background-color: #81B3D2;
   color: #ffffff;
+  min-height: 191px;
+  position: relative;
+  padding-bottom: 35px;
+  padding-top: 38px;
+
+  @media (min-width: @desktop-width) {
+    padding-top: 53px;
+  }
 }
 
 .product-advantage-text {
   height: auto;
-  min-height: 256px;
+}
+
+
+.product-advantage-text--divided {
+  @media (max-width: @mobile-width) {
+
+    padding-top: 70px;
+  }
+
+}
+
+.product-advantage-text--divided::before {
+
+  @media (max-width: @mobile-width) {
+
+    background: url("../../images/dividers/divider-mobile-advantage.svg");
+    width: 100%;
+    height: 37px;
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    padding: 0;
+    margin: 0;
+
+  }
+}
+
+.product-advantage__reversed {
+
+  @media (min-width: @tablet-width) {
+
+    flex-direction: row-reverse;
+  }
 }
