@@ -20,7 +20,7 @@
 }
 
 .product-advantage__text {
-  padding: 25px 18px 18px 18px;
+  padding: 25px 30px 18px 25px;
   box-sizing: border-box;
   align-items: center;
   height: auto;
@@ -30,14 +30,14 @@
     min-height: 256px;
     height: auto;
     text-align: center;
-    padding: 44px 16px;
+    padding: 44px 10px 24px;
   }
 
   @media (min-width: @desktop-width) {
     width: 400px;
     text-align: center;
     min-height: 256px;
-    height: auto;
+    height: 100%;
   }
 }
 
@@ -45,16 +45,22 @@
   display: block;
   object-fit: cover;
   width: 100%;
-  height: auto;
+  height: 100%;
 
   @media (min-width: @tablet-width) {
     width: 512px;
-    height: auto;
+    height: 100%;
     object-fit: cover;
   }
 
   @media (min-width: @desktop-width) {
     width: 800px;
     object-fit: cover;
+  }
+}
+
+.product-advantage--reversed {
+  @media (min-width: @tablet-width) {
+    flex-direction: row-reverse;
   }
 }

@@ -23,15 +23,46 @@
     background-size: 75px 72px;
     background-repeat: no-repeat;
     background-position: center 60px;
-
   }
+}
+
+.advantage-detailes__item--food .product-advantage-text__header {
+  padding-left: 10px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 23px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 60px;
+  }
+}
+
+.advantage-detailes__item--food .product-advantage-text__description {
+  padding-left: 10px;
+}
+
+.advantage-detailes__item--housing .product-advantage-text__header {
+  padding-left: 5px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 25px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 60px;
+  }
+}
+
+.advantage-detailes__item--housing .product-advantage-text__description {
+  padding-left: 5px;
 }
 
 .advantage-detailes__item--food .product-advantage-text {
   background-image: url(../images/icons/advantage-icons/icon-burger.svg);
   background-size: 40px 35px;
   background-repeat: no-repeat;
-  background-position: left top;
+  background-position: left 3px;
 
   @media (min-width: @tablet-width) {
     background-image: url(../images/icons/advantage-icons/icon-burger.svg);
@@ -45,7 +76,9 @@
   background-image: url(../images/icons/advantage-icons/icon-gift.svg);
   background-size: 32px 38px;
   background-repeat: no-repeat;
-  background-position: left top;
+  background-position: 3px 0;
+
+
 
   @media (min-width: @tablet-width) {
     background-image: url(../images/icons/advantage-icons/icon-gift.svg);
@@ -58,11 +91,11 @@
 .advantage-detailes__item .product-advantage-text {
   background-color: #ffffff;
   display: block;
-  min-height: 113px;
+  min-height: 115px;
   margin: 0;
 
   @media (max-width: @mobile-width) {
-    padding: 8px 0 8px 52px;
+    padding: 8px 0 12px 42px;
   }
 
   @media (min-width: @tablet-width) {
@@ -77,4 +110,9 @@
   @media (max-width: @mobile-width) {
     text-align: start;
   }
+}
+
+
+.advantage-detailes__item--souvenirs {
+  text-align: left;
 }

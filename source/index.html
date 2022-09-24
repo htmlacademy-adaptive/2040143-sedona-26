@@ -5,8 +5,8 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.min.css">
-  <link rel="preload" href="fonts/ptsans.woff2" as="font">
-  <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="favicon.ico">
 </head>
@@ -17,14 +17,13 @@
 
   <div class="container">
     <header class="main-header">
-      <a class="main-header__logo sedona-logo">
-        <img class="sedona-logo__logo-image" src="images/logos/sedona-logo.svg" width="185" height="96"
-          alt="Логотип Седоны.">
 
-        <span class="visually-hidden">Логотип Седоны.</span>
-
-      </a>
-      <nav class="main-navigation main-navigation--closed">
+      <nav class="main-navigation main-navigation--nojs">
+        <a class="main-header__logo sedona-logo">
+          <img class="sedona-logo__logo-image" src="images/logos/sedona-logo.svg" width="185" height="96"
+            alt="Логотип Седоны.">
+          <span class="visually-hidden">Логотип Седоны.</span>
+        </a>
         <button class="main-navigation__toggle button-navigation-toggle">
           <span class="visually-hidden">Открыть навигацию.</span>
         </button>
@@ -62,7 +61,7 @@
           <ol class="advantages__list sedona-advantages">
             <li class="sedona-advantages__item product-advantage advantage-detailed">
               <div
-                class="product-advantage__text product-advantage-text product-advantage-text--illustrated product-advantage-text--divided">
+                class="product-advantage__text product-advantage-text product-advantage-text__illustrated product-advantage-text__illustrated--divided">
                 <h3 class="product-advantage-text__header">Настоящий городок</h3>
                 <p class="product-advantage-text__number">— №1 —</p>
                 <p class="product-advantage-text__description">Седона не аттракцион для туристов, там течет своя жизнь
@@ -100,8 +99,8 @@
                 </li>
               </ul>
             </li>
-            <li class="sedona-advantages__item product-advantage product-advantage__reversed">
-              <div class="product-advantage__text product-advantage-text product-advantage-text--illustrated">
+            <li class="sedona-advantages__item product-advantage product-advantage--reversed">
+              <div class="product-advantage__text product-advantage-text product-advantage-text__illustrated">
                 <h3 class="product-advantage-text__header">Там есть Мост дьявола</h3>
                 <p class="product-advantage-text__number">— №2 —</p>
                 <p class="product-advantage-text__description">Да, по нему можно пройти! Если вы осмелитесь, конечно
