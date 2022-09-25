@@ -3,19 +3,31 @@
   line-height: 26px;
   font-weight: 700;
 
+  @media (min-width: @desktop-width) {
+    padding-left: 10px;
+  }
 }
 
 .main-footer__social {
   text-align: center;
   padding-top: 20px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 10px;
+    padding-left: 5px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 10px;
+    padding-left: 0;
+  }
 }
 
 .main-footer__developer {
-  padding-top: 30px;
+  padding-top: 25px;
 
   @media (min-width: @tablet-width) {
     padding: 0;
     align-items: center;
   }
-
 }

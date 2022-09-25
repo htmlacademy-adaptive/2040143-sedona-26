@@ -1,0 +1,21 @@
+.sedona-video-button {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(65%, -40%);
+  border: none;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  box-sizing: content-box;
+  z-index: 2;
+  background: transparent;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    transform: translate(50%, -45%);
+  }
+
+  @media (min-width: @desktop-width) {
+    transform: translate(50%, -90%);
+  }
+}

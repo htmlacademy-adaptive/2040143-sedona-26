@@ -5,24 +5,21 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.min.css">
-  <link rel="preload" href="fonts/ptsans.woff2" as="font">
-  <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="favicon.ico">
 </head>
 
 <body class="page__body">
-
-
   <div class="container">
     <header class="main-header">
-      <a class="main-header__logo sedona-logo">
+      <a class="main-header__logo sedona-logo" href="index.html">
         <img class="sedona-logo__logo-image" src="images/logos/sedona-logo.svg" width="185" height="96"
           alt="Логотип Седоны.">
-
         <span class="visually-hidden">Логотип Седоны.</span>
       </a>
-      <nav class="main-navigation main-navigation--closed">
+      <nav class="main-navigation main-navigation--closed main-navigation--nojs">
         <button class="main-navigation__toggle button-navigation-toggle">
           <span class="visually-hidden">Открыть навигацию.</span>
         </button>
@@ -87,7 +84,7 @@
             </fieldset>
             <fieldset class="user-form__contacts contacts-form">
               <legend class="contacts-form__header">
-                Контактная информация
+                Контактная информация:
               </legend>
               <ul class="contacts-form__form-list user-contacts">
                 <li class="user-contacts__item user-contacts-item">
@@ -106,7 +103,7 @@
             </fieldset>
             <fieldset class="user-form__feedback user-feedback-forms">
               <legend class="user-feedback-forms__header">
-                Ваше общее впечатление
+                Ваше общее впечатление:
               </legend>
               <ul class="user-form__form-list user-feedback">
                 <li class="user-feedback__item feedback-form-item">
@@ -134,32 +131,32 @@
             </fieldset>
             <fieldset class="user-form__attractions visited-attractions">
               <legend class="visited-attractions__header">
-                Посещенные достопримечательности
+                Посещенные достопримечательности:
               </legend>
               <ul class="visited-attractions__form-list user-visited-attractions">
                 <li class="user-visited-attractions__item visited-attractions-form">
-                  <label class="feedback-form-item__checkbox">
+                  <label class="user-visited-attractions__checkbox">
                     <input class="visited-attractions-form__input" type="checkbox" name="Devil Bridge" checked>
                     <span class="visited-attractions-form__attractions-checkbox-mark"></span>
                     <span class="visited-attractions-form__attractions-checkbox-label">Мост Дьявола</span>
                   </label>
                 </li>
                 <li class="user-visited-attractions__item visited-attractions-form">
-                  <label class="feedback-form-item__checkbox">
+                  <label class="user-visited-attractions__checkbox">
                     <input class="visited-attractions-form__input" type="checkbox" name="Ring-mountain" checked>
                     <span class="visited-attractions-form__attractions-checkbox-mark"></span>
                     <span class="visited-attractions-form__attractions-checkbox-label">Гора-Колокол</span>
                   </label>
                 </li>
                 <li class="user-visited-attractions__item visited-attractions-form">
-                  <label class="feedback-form-item__checkbox">
+                  <label class="user-visited-attractions__checkbox">
                     <input class="visited-attractions-form__input" type="checkbox" name="Slide-park" checked>
                     <span class="visited-attractions-form__attractions-checkbox-mark"></span>
                     <span class="visited-attractions-form__attractions-checkbox-label">Слайд-парк</span>
                   </label>
                 </li>
                 <li class="user-visited-attractions__item visited-attractions-form">
-                  <label class="feedback-form-item__checkbox">
+                  <label class="user-visited-attractions__checkbox">
                     <input class="visited-attractions-form__input" type="checkbox" name="Red rocks">
                     <span class="visited-attractions-form__attractions-checkbox-mark"></span>
                     <span class="visited-attractions-form__attractions-checkbox-label">Красные скалы</span>
@@ -171,8 +168,7 @@
               <legend class="user-comment-form__header">
                 Опишите свои эмоции:
               </legend>
-              <textarea class="user-comment-form__input" name="user-comment" id="user-comment">
-              Опишите подробно все свои восторги
+              <textarea class="user-comment-form__input" name="user-comment" id="user-comment">Опишите подробно все свои восторги
             </textarea>
             </fieldset>
             <button class="user-form__button-send-feedback button-primary" type="submit">
@@ -233,8 +229,7 @@
         </div>
       </div>
     </footer>
-
-    <div class="modal-container--closed">
+    <div class="modal-container modal-container--closed">
       <div class="modal" id="modal-page">
         <section class="modal__content">
           <h2 class="modal__header">Что-то пошло не так!</h2>
@@ -243,13 +238,12 @@
         </section>
       </div>
     </div>
-
-    <div class="modal-container-success--closed">
+    <div class="modal-container-success modal-container-success--closed">
       <div class="modal-success" id="modal-success-page">
         <section class="modal-success__content">
           <h2 class="modal-success__header">Ваш отзыв отправлен!</h2>
           <p class="modal-success__description">Спасибо за ваше участие, ваш отзыв уже поступил к
-            нам. В ближайшее время мы опубликуем его на сайте.
+            нам. <span>В ближайшее время мы</span>опубликуем его на сайте.
           </p>
           <div class="modal-success__button-back">
             <button class="modal-success__button button-primary">Закрыть окно</button>
@@ -257,7 +251,6 @@
         </section>
       </div>
     </div>
-
   </div>
   <script src="js/script.js"></script>
 </body>

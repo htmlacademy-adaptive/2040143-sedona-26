@@ -18,6 +18,13 @@
 .feedback-form {
   text-align: center;
 
+  @media (min-width: @tablet-width) {
+    margin-bottom: 10px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 8px;
+  }
 }
 
 .feedback-form__description {
@@ -31,11 +38,12 @@
   @media (min-width: @tablet-width) {
     font-size: 14px;
     line-height: 24px;
-    padding: 20px 105px 80px;
+    padding: 20px 105px 78px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 20px 260px 40px;
+    padding: 20px 260px 45px;
+    line-height: 21px;
   }
 }
 

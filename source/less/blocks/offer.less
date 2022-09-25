@@ -6,12 +6,12 @@
 
   @media (min-width: @tablet-width) {
     min-height: 318px;
-    padding: 61px 158px 39px;
+    padding: 60px 150px 9px;
   }
 
   @media (min-width: @desktop-width) {
     min-height: 331px;
-    padding: 61px 382px 39px;
+    padding: 59px 350px 39px;
   }
 }
 
@@ -25,7 +25,7 @@
   margin: 0;
 
   @media (min-width: @tablet-width) {
-    padding-bottom: 32px;
+    padding-bottom: 33px;
     font-size: 30px;
     line-height: 26px;
   }
@@ -39,9 +39,8 @@
   padding-bottom: 32px;
   margin: 0;
 
-
   @media (min-width: @tablet-width) {
-    padding-bottom: 41px;
+    padding-bottom: 42px;
   }
 
   @media (min-width: @desktop-width) {
@@ -49,11 +48,23 @@
   }
 }
 
+.offer__description span {
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}
+
 .offer__button {
   width: 284px;
   height: 58px;
+  font-size: 21px;
+  line-height: 26px;
+  padding: 4px 0 1px 0;
+  box-sizing: border-box;
+  font-family: 'PT Sans';
 
   @media (min-width: @tablet-width) {
     width: 458px;
+    padding: 0;
   }
 }

@@ -5,7 +5,6 @@
   min-height: 113px;
   box-sizing: border-box;
 
-
   @media (min-width: @tablet-width) {
     display: flex;
     min-height: 256px;
@@ -20,24 +19,25 @@
 }
 
 .product-advantage__text {
-  padding: 25px 18px 18px 18px;
+  padding: 25px 33px 18px;
   box-sizing: border-box;
   align-items: center;
   height: auto;
 
   @media (min-width: @tablet-width) {
+    padding: 44px 30px 24px;
     width: 256px;
     min-height: 256px;
     height: auto;
     text-align: center;
-    padding: 44px 16px;
   }
 
   @media (min-width: @desktop-width) {
     width: 400px;
     text-align: center;
     min-height: 256px;
-    height: auto;
+    height: 100%;
+    padding: 44px 58px 24px;
   }
 }
 
@@ -45,11 +45,11 @@
   display: block;
   object-fit: cover;
   width: 100%;
-  height: auto;
+  height: 100%;
 
   @media (min-width: @tablet-width) {
     width: 512px;
-    height: auto;
+    height: 100%;
     object-fit: cover;
   }
 
@@ -57,4 +57,15 @@
     width: 800px;
     object-fit: cover;
   }
+}
+
+.product-advantage--reversed {
+  @media (min-width: @tablet-width) {
+    flex-direction: row-reverse;
+  }
+}
+
+.product-advantage__text--ident {
+  padding-left: 50px;
+  padding-right: 50px;
 }
