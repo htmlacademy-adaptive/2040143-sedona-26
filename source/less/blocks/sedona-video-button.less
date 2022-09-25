@@ -9,4 +9,13 @@
   box-sizing: content-box;
   z-index: 2;
   background: transparent;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    transform: translate(50%, -45%);
+  }
+
+  @media (min-width: @desktop-width) {
+    transform: translate(50%, -90%);
+  }
 }
