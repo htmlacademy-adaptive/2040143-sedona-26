@@ -20,17 +20,17 @@
 }
 
 .product-advantage__text {
-  padding: 25px 30px 18px 25px;
+  padding: 25px 33px 18px;
   box-sizing: border-box;
   align-items: center;
   height: auto;
 
   @media (min-width: @tablet-width) {
+    padding: 44px 30px 24px;
     width: 256px;
     min-height: 256px;
     height: auto;
     text-align: center;
-    padding: 44px 10px 24px;
   }
 
   @media (min-width: @desktop-width) {
@@ -38,6 +38,7 @@
     text-align: center;
     min-height: 256px;
     height: 100%;
+    padding: 44px 58px 24px;
   }
 }
 
@@ -63,4 +64,9 @@
   @media (min-width: @tablet-width) {
     flex-direction: row-reverse;
   }
+}
+
+.product-advantage__text--ident {
+  padding-left: 50px;
+  padding-right: 50px;
 }

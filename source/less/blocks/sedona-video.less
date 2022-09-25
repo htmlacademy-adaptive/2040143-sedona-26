@@ -5,11 +5,14 @@
   padding: 0;
   width: 100%;
   text-align: center;
-
 }
 
 .sedona-video__link {
   width: 100%;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 10px;
+  }
 
   @media (min-width: @desktop-width) {
     width: 800px;
@@ -22,6 +25,8 @@
   padding: 0 20px 0 20px;
   height: 180px;
   object-fit: cover;
+  box-sizing: border-box;
+
 
 
   @media (min-width: @tablet-width) {
@@ -63,4 +68,8 @@
   @media (min-width: @desktop-width) {
     margin: 12px 295px 62px;
   }
+}
+
+.sedona-video__link {
+  position: relative;
 }

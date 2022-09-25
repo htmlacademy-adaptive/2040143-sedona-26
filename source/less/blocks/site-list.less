@@ -21,3 +21,16 @@
     display: block;
   }
 }
+
+.site-list__item:not(:first-child) {
+  border-top: solid rgba(255, 255, 255, 0.2) 1px;
+
+}
+
+.site-list__item:not(:last-child) {
+  border-bottom: solid rgba(1, 1, 1, 0.2) 1px;
+}
+
+.site-list__item:last-child {
+  box-shadow: inset 0 -4px 7px rgba(0, 0, 0, 0.2);
+}
