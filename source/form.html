@@ -12,14 +12,11 @@
 </head>
 
 <body class="page__body">
-
-
   <div class="container">
     <header class="main-header">
       <a class="main-header__logo sedona-logo">
         <img class="sedona-logo__logo-image" src="images/logos/sedona-logo.svg" width="185" height="96"
           alt="Логотип Седоны.">
-
         <span class="visually-hidden">Логотип Седоны.</span>
       </a>
       <nav class="main-navigation main-navigation--closed">
@@ -232,8 +229,7 @@
         </div>
       </div>
     </footer>
-
-    <div class="modal-container">
+    <div class="modal-container modal-container--closed">
       <div class="modal" id="modal-page">
         <section class="modal__content">
           <h2 class="modal__header">Что-то пошло не так!</h2>
@@ -242,13 +238,12 @@
         </section>
       </div>
     </div>
-
     <div class="modal-container-success modal-container-success--closed">
       <div class="modal-success" id="modal-success-page">
         <section class="modal-success__content">
           <h2 class="modal-success__header">Ваш отзыв отправлен!</h2>
           <p class="modal-success__description">Спасибо за ваше участие, ваш отзыв уже поступил к
-            нам. В ближайшее время мы опубликуем его на сайте.
+            нам. <span>В ближайшее время мы</span>опубликуем его на сайте.
           </p>
           <div class="modal-success__button-back">
             <button class="modal-success__button button-primary">Закрыть окно</button>
@@ -256,7 +251,6 @@
         </section>
       </div>
     </div>
-
   </div>
   <script src="js/script.js"></script>
 </body>
