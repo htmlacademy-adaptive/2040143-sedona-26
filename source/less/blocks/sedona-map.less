@@ -3,3 +3,24 @@
   width: 100%;
   margin-bottom: 5px;
 }
+
+.sedona-map--nojs .sedona-map__map {
+  display: none;
+}
+
+.sedona-map {
+  background-image: url(../images/background/map/map-mobile.jpg);
+  width: 100%;
+  display: block;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 350px;
+
+  @media (min-width: @tablet-width) {
+    background-image: url(../images/background/map/map-tablet.jpg);
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url(../images/background/map/map-desktop.jpg);
+  }
+}

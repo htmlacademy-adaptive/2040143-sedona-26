@@ -94,7 +94,7 @@
   display: block;
 
   @media (min-resolution: 2dppx) {
-    background-image: url(../images/background/sedona-view-main@2x.jpg);
+    background-image: url("../images/background/sedona-view-main@2x.jpg");
     background-size: 1200px auto;
   }
 }
@@ -104,10 +104,12 @@
 }
 
 .sedona-user-picture__description {
+  height: fit-content;
+
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 200px 100px;
-    grid-template-rows: repeat(2, 40px);
+    grid-template-rows: repeat(2, 1fr);
     justify-content: space-between;
   }
 
