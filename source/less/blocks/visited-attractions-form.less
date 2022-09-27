@@ -20,9 +20,10 @@
   margin-left: 25px;
   font-size: 18px;
   line-height: 26px;
+  padding-left: 10px;
 }
 
-.visited-attractions-form__input[type="checkbox"]:checked+.visited-attractions-form__attractions-checkbox-mark::after {
+.visited-attractions-form__input[type="checkbox"]:checked + .visited-attractions-form__attractions-checkbox-mark::after {
   position: absolute;
   width: 22px;
   height: 16px;
@@ -32,18 +33,14 @@
   content: "";
 }
 
-.visited-attractions-form__attractions-checkbox-label {
-  padding-left: 10px;
-}
-
-.visited-attractions-form__input[type="checkbox"]:hover~.visited-attractions-form__attractions-checkbox-mark {
+.visited-attractions-form__input[type="checkbox"]:hover ~ .visited-attractions-form__attractions-checkbox-mark {
   background-color: #e5e5e5;
 }
 
-.visited-attractions-form__input[type="checkbox"]:active~.visited-attractions-form__attractions-checkbox-mark {
+.visited-attractions-form__input[type="checkbox"]:active ~ .visited-attractions-form__attractions-checkbox-mark {
   background-color: #d5d5d5;
 }
 
-.visited-attractions-form__input[type="checkbox"]:focus~.visited-attractions-form__attractions-checkbox-mark {
+.visited-attractions-form__input[type="checkbox"]:focus ~ .visited-attractions-form__attractions-checkbox-mark {
   background-color: #d5d5d5;
 }
